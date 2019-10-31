@@ -10,5 +10,5 @@ function formCheck(variable){
   const letters = /^[A-Za-z]+$/;
   // firstName Check
   let char = (variable.charAt(variable.length - 1)); // Isole la dernière lettre de la chaine
-  ((char.match(letters)) ? char : char.replace('')); // Essaie de remplacer l'input par '' si char n'est pas une lettre
+  char.match(letters) ? alert(variable) : char == char.slice(0, 1)  ; // Essaie de delete input si char n'est pas une lettre
 };
